@@ -1,0 +1,23 @@
+{
+  "name": "leetcode-challenges",
+  "version": "1.0.0",
+  "description": "",
+  "main": "11.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/laihaojie/leetcode-challenges.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/laihaojie/leetcode-challenges/issues"
+  },
+  "homepage": "https://github.com/laihaojie/leetcode-challenges#readme",
+  "dependencies": {
+    "typescript": "^4.5.5"
+  }
+}
