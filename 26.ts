@@ -43,7 +43,11 @@ function removeDuplicates(nums: number[]): number {
   let i = 0;
   while (i < nums.length) {
     if (nums[i] == nums[i + 1]) {
-      nums.splice(i, 1)
+      let k = i;
+      while (nums[k] == nums[k + 1]) {
+        k++
+      }
+      nums.splice(i, k - i)
     } else {
       i++
     }
@@ -51,4 +55,4 @@ function removeDuplicates(nums: number[]): number {
   return nums.length
 };
 
-console.log(removeDuplicates([0, 0, 1, 1, 1, 2, 2, 3, 3, 4]));
+console.log(removeDuplicates([0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 3, 3, 4, 5, 6]));
