@@ -36,10 +36,11 @@ function strStr(haystack: string, needle: string): number {
   if (!needle) return 0
   let len = needle.length
   for (let i = 0; i < haystack.length; i++) {
-    if (haystack.slice(i, len +1) == needle) {
-      return i
+    if (haystack[i] == needle[0]) {
+      if (haystack.slice(i, len + i) == needle) {
+        return i
+      }
     }
-
   }
   return -1
 };
